@@ -151,7 +151,17 @@ export const Footer = () => {
         <div className="container-fluid py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-primary-foreground/60 text-sm">
-              © {new Date().getFullYear()} {COMPANY.name}. All rights reserved.
+              © {new Date().getFullYear()} {COMPANY.name}. All rights reserved.{" "}
+              Created by{" "}
+              <a
+                href="https://anuhyadigital.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary-foreground/80 hover:text-accent transition-colors"
+              >
+                Anuhya Digital
+              </a>
+              . All Rights Reserved.
             </p>
             <div className="flex gap-6 text-sm">
               <Link

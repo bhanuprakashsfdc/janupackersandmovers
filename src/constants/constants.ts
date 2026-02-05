@@ -28,7 +28,7 @@ import {
 // COMPANY INFORMATION
 // =====================================================
 export const COMPANY = {
-  name: "SwiftMove Packers",
+  name: "Janu Packers and Movers",
   tagline: "India's Most Trusted Relocation Partner",
   description: "Premium packing and moving services across India with 15+ years of excellence. We handle your belongings with the care they deserve.",
   foundedYear: 2009,
@@ -36,18 +36,18 @@ export const COMPANY = {
   movesCompleted: "50,000+",
   happyCustomers: "45,000+",
   cities: "500+",
-  phone: "+91-9876543210",
-  alternatePhone: "+91-9876543211",
-  whatsapp: "+919876543210",
-  email: "info@swiftmovepackers.com",
-  address: "Plot No. 45, Industrial Area, Phase 2, Hyderabad, Telangana 500032",
+  phone: "+91-9392108148",
+  alternatePhone: "",
+  whatsapp: "+919392108148",
+  email: "info@janupackersandmovers.com",
+  address: "Janu Packers and Movers,Beside Canara Bank, Vaaikuntapuram Road, M.R.Palli, Tirupati",
   workingHours: "Mon - Sat: 8:00 AM - 8:00 PM",
   socialLinks: {
-    facebook: "https://facebook.com/swiftmovepackers",
-    instagram: "https://instagram.com/swiftmovepackers",
-    twitter: "https://twitter.com/swiftmovepackers",
-    linkedin: "https://linkedin.com/company/swiftmovepackers",
-    youtube: "https://youtube.com/swiftmovepackers"
+    facebook: "https://facebook.com/janupackersandmovers",
+    instagram: "https://instagram.com/janupackersandmovers",
+    twitter: "https://twitter.com/janupackersandmovers",
+    linkedin: "https://linkedin.com/company/janupackersandmovers",
+    youtube: "https://youtube.com/janupackersandmovers"
   }
 };
 
@@ -293,7 +293,7 @@ export const LOCATIONS = [
     city: "Hyderabad",
     state: "Telangana",
     slug: "packers-and-movers-in-hyderabad",
-    metaTitle: "Best Packers and Movers in Hyderabad | SwiftMove Packers",
+    metaTitle: "Best Packers and Movers in Hyderabad | Janu Packers and Movers",
     metaDescription: "Top-rated packers and movers in Hyderabad. Professional household & office shifting services with free quotes. Call now for reliable relocation services.",
     heroTitle: "Premium Packers & Movers in Hyderabad",
     heroDescription: "Experience seamless relocations in the City of Pearls. Our Hyderabad team specializes in IT corridor moves, gated community relocations, and interstate shifting with local expertise.",
@@ -310,7 +310,7 @@ export const LOCATIONS = [
     city: "Bangalore",
     state: "Karnataka",
     slug: "packers-and-movers-in-bangalore",
-    metaTitle: "Best Packers and Movers in Bangalore | SwiftMove Packers",
+    metaTitle: "Best Packers and Movers in Bangalore | Janu Packers and Movers",
     metaDescription: "Trusted packers and movers in Bangalore. Affordable home & office relocation services. Get free estimate today for safe moving experience.",
     heroTitle: "Trusted Packers & Movers in Bangalore",
     heroDescription: "Navigate the Silicon Valley of India with our expert moving services. From Electronic City to Whitefield, we understand Bangalore's unique moving challenges.",
@@ -327,7 +327,7 @@ export const LOCATIONS = [
     city: "Chennai",
     state: "Tamil Nadu",
     slug: "packers-and-movers-in-chennai",
-    metaTitle: "Best Packers and Movers in Chennai | SwiftMove Packers",
+    metaTitle: "Best Packers and Movers in Chennai | Janu Packers and Movers",
     metaDescription: "Professional packers and movers in Chennai. Safe household & corporate relocation services at best prices. Book your move today!",
     heroTitle: "Professional Packers & Movers in Chennai",
     heroDescription: "Reliable relocations in the Gateway to South India. Our Chennai team excels in handling monsoon-season moves and coastal humidity challenges.",
@@ -344,7 +344,7 @@ export const LOCATIONS = [
     city: "Mumbai",
     state: "Maharashtra",
     slug: "packers-and-movers-in-mumbai",
-    metaTitle: "Best Packers and Movers in Mumbai | SwiftMove Packers",
+    metaTitle: "Best Packers and Movers in Mumbai | Janu Packers and Movers",
     metaDescription: "Reliable packers and movers in Mumbai. Affordable shifting services for home & office. Free survey and quote. Call us now!",
     heroTitle: "Reliable Packers & Movers in Mumbai",
     heroDescription: "Moving in the city that never sleeps requires expertise. Our Mumbai team specializes in high-rise relocations, space-constrained moves, and time-sensitive corporate shifts.",
@@ -361,7 +361,7 @@ export const LOCATIONS = [
     city: "Delhi",
     state: "Delhi NCR",
     slug: "packers-and-movers-in-delhi",
-    metaTitle: "Best Packers and Movers in Delhi NCR | SwiftMove Packers",
+    metaTitle: "Best Packers and Movers in Delhi NCR | Janu Packers and Movers",
     metaDescription: "Top packers and movers in Delhi NCR. Complete relocation solutions for Noida, Gurgaon, Ghaziabad. Get instant quote now!",
     heroTitle: "Expert Packers & Movers in Delhi NCR",
     heroDescription: "Navigate the capital region with confidence. Our NCR network covers Delhi, Noida, Gurgaon, Ghaziabad, and Faridabad with seamless coordination.",
@@ -378,7 +378,7 @@ export const LOCATIONS = [
     city: "Pune",
     state: "Maharashtra",
     slug: "packers-and-movers-in-pune",
-    metaTitle: "Best Packers and Movers in Pune | SwiftMove Packers",
+    metaTitle: "Best Packers and Movers in Pune | Janu Packers and Movers",
     metaDescription: "Affordable packers and movers in Pune. Professional home & office shifting services. Free estimate and on-time delivery guaranteed.",
     heroTitle: "Affordable Packers & Movers in Pune",
     heroDescription: "From Hinjewadi's IT hubs to Koregaon Park's premium residences, our Pune team delivers quality moves at competitive prices.",
@@ -395,7 +395,7 @@ export const LOCATIONS = [
     city: "Kolkata",
     state: "West Bengal",
     slug: "packers-and-movers-in-kolkata",
-    metaTitle: "Best Packers and Movers in Kolkata | SwiftMove Packers",
+    metaTitle: "Best Packers and Movers in Kolkata | Janu Packers and Movers",
     metaDescription: "Trusted packers and movers in Kolkata. Safe and affordable household & commercial shifting services across West Bengal.",
     heroTitle: "Trusted Packers & Movers in Kolkata",
     heroDescription: "Experience the warmth of Bengali hospitality in our moving services. We navigate Kolkata's heritage buildings and modern townships with equal expertise.",
@@ -412,7 +412,7 @@ export const LOCATIONS = [
     city: "Ahmedabad",
     state: "Gujarat",
     slug: "packers-and-movers-in-ahmedabad",
-    metaTitle: "Best Packers and Movers in Ahmedabad | SwiftMove Packers",
+    metaTitle: "Best Packers and Movers in Ahmedabad | Janu Packers and Movers",
     metaDescription: "Professional packers and movers in Ahmedabad. Quality packing and safe transportation for household & commercial goods.",
     heroTitle: "Quality Packers & Movers in Ahmedabad",
     heroDescription: "From the old city's pol houses to SG Highway's modern apartments, we understand Ahmedabad's diverse moving requirements.",
@@ -429,7 +429,7 @@ export const LOCATIONS = [
     city: "Tirupati",
     state: "Andhra Pradesh",
     slug: "packers-and-movers-in-tirupati",
-    metaTitle: "Best Packers and Movers in Tirupati | SwiftMove Packers",
+    metaTitle: "Best Packers and Movers in Tirupati | Janu Packers and Movers",
     metaDescription: "Reliable packers and movers in Tirupati. Affordable household & office shifting with temple town expertise. Get free quote!",
     heroTitle: "Reliable Packers & Movers in Tirupati",
     heroDescription: "The sacred city of Lord Venkateshwara deserves respectful moving services. We handle religious artifacts, brass items, and household goods with devotion and care.",
@@ -446,7 +446,7 @@ export const LOCATIONS = [
     city: "Visakhapatnam",
     state: "Andhra Pradesh",
     slug: "packers-and-movers-in-visakhapatnam",
-    metaTitle: "Best Packers and Movers in Visakhapatnam | SwiftMove Packers",
+    metaTitle: "Best Packers and Movers in Visakhapatnam | Janu Packers and Movers",
     metaDescription: "Professional packers and movers in Vizag. Complete relocation services for household, office, and industrial moves.",
     heroTitle: "Professional Packers & Movers in Visakhapatnam",
     heroDescription: "The Jewel of the East Coast trusts us for reliable relocations. Port city expertise with humidity-resistant packing and coastal route knowledge.",
@@ -541,7 +541,7 @@ export const TESTIMONIALS = [
     name: "Rajesh Kumar",
     location: "Bangalore to Chennai",
     rating: 5,
-    text: "Exceptional service! Shifted my entire 3BHK from Whitefield to OMR. The team was professional, punctual, and extremely careful with my antique furniture. Not a single scratch. Highly recommend SwiftMove!",
+    text: "Exceptional service! Shifted my entire 3BHK from Whitefield to OMR. The team was professional, punctual, and extremely careful with my antique furniture. Not a single scratch. Highly recommend Janu packers and movers!",
     image: "/testimonials/user1.jpg",
     date: "December 2024"
   },
@@ -550,7 +550,7 @@ export const TESTIMONIALS = [
     name: "Priya Sharma",
     location: "Delhi to Mumbai",
     rating: 5,
-    text: "Was worried about my piano and art collection during interstate move. SwiftMove team handled everything with utmost care. The custom crating for my piano was impressive. Best decision I made!",
+    text: "Was worried about my piano and art collection during interstate move. Janu packers and movers team handled everything with utmost care. The custom crating for my piano was impressive. Best decision I made!",
     image: "/testimonials/user2.jpg",
     date: "November 2024"
   },
@@ -568,7 +568,7 @@ export const TESTIMONIALS = [
     name: "Sneha Reddy",
     location: "Pune to Hyderabad",
     rating: 5,
-    text: "First time using packers and movers and I'm so glad I chose SwiftMove. The team was friendly, the packing was top-notch, and everything arrived on the promised date. Will definitely use again!",
+    text: "First time using packers and movers and I'm so glad I chose Janu packers and movers. The team was friendly, the packing was top-notch, and everything arrived on the promised date. Will definitely use again!",
     image: "/testimonials/user4.jpg",
     date: "October 2024"
   },
@@ -695,14 +695,14 @@ export const INDUSTRIES = [
 // =====================================================
 export const SEO_DATA = {
   home: {
-    title: "SwiftMove Packers - Best Packers and Movers in India | Trusted Since 2009",
+    title: "Janu Packers and Movers - Best Packers and Movers in India | Trusted Since 2009",
     description: "India's most trusted packers and movers. Professional household, office, car & bike shifting services across 500+ cities. Get free quote now! 50,000+ successful moves.",
     keywords: "packers and movers, best packers and movers India, household shifting, office relocation, car transport, bike transport, moving company India"
   },
   about: {
-    title: "About SwiftMove Packers | 15+ Years of Trusted Relocations",
+    title: "About Janu Packers and Movers | 15+ Years of Trusted Relocations",
     description: "Learn about India's leading moving company. 15+ years experience, 50,000+ successful moves, and 4.9★ customer rating. Discover our story and values.",
-    keywords: "about swiftmove packers, moving company history, trusted movers India, relocation experts"
+    keywords: "about Janu Packers and Movers, moving company history, trusted movers India, relocation experts"
   },
   services: {
     title: "Our Services | Packing, Moving, Storage & Transportation",
@@ -710,8 +710,8 @@ export const SEO_DATA = {
     keywords: "moving services, packing services, transportation services, storage services, relocation services India"
   },
   contact: {
-    title: "Contact SwiftMove Packers | Get Free Moving Quote",
-    description: "Contact us for free moving quote. Call +91-9876543210 or WhatsApp. Expert consultation for household, office, and vehicle relocation needs.",
+    title: "Contact Janu Packers and Movers | Get Free Moving Quote",
+    description: "Contact us for free moving quote. Call +91-9392108148 or WhatsApp. Expert consultation for household, office, and vehicle relocation needs.",
     keywords: "contact packers movers, moving quote, relocation consultation, packers movers phone number"
   },
   gallery: {

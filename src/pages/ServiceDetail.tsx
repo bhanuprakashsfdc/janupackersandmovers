@@ -36,7 +36,7 @@ const ServiceDetail = () => {
   return (
     <HelmetProvider>
       <SEO
-        title={`${service.title} - Professional ${service.title} Services | SwiftMove Packers`}
+        title={`${service.title} - Professional ${service.title} Services | Janu Packers and Movers`}
         description={service.fullDescription}
         keywords={`${service.title.toLowerCase()}, ${service.title.toLowerCase()} services, packers movers ${service.title.toLowerCase()}`}
       />
