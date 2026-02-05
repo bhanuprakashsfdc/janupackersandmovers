@@ -19,7 +19,7 @@ const ServiceDetail = () => {
         <div className="min-h-screen flex items-center justify-center">
           <div className="text-center">
             <h1 className="text-4xl font-bold mb-4">Service Not Found</h1>
-            <Link to="/services" className="text-accent hover:underline">
+            <Link to="/services.html" className="text-accent hover:underline">
               View All Services
             </Link>
           </div>
@@ -48,12 +48,12 @@ const ServiceDetail = () => {
 
           <div className="container-fluid relative z-10">
             <div className="flex items-center gap-2 text-white/60 mb-4">
-              <Link to="/" className="hover:text-white transition-colors">
+              <Link to="/index.html" className="hover:text-white transition-colors">
                 Home
               </Link>
               <span>/</span>
               <Link
-                to="/services"
+                to="/services.html"
                 className="hover:text-white transition-colors"
               >
                 Services
@@ -79,7 +79,7 @@ const ServiceDetail = () => {
                 </p>
                 <div className="flex flex-wrap gap-4">
                   <Button variant="accent" size="lg" asChild>
-                    <Link to="/contact">
+                    <Link to="/contact.html">
                       Get Free Quote
                       <ArrowRight className="w-5 h-5" />
                     </Link>
@@ -191,7 +191,7 @@ const ServiceDetail = () => {
                       className="w-full mb-3"
                       asChild
                     >
-                      <Link to="/contact">Get Free Quote</Link>
+                      <Link to="/contact.html">Get Free Quote</Link>
                     </Button>
                     <Button
                       variant="heroOutline"
@@ -217,7 +217,7 @@ const ServiceDetail = () => {
                       {relatedServices.map((related) => (
                         <li key={related.id}>
                           <Link
-                            to={`/services/${related.slug}`}
+                            to={`/services/${related.slug}.html`}
                             className="flex items-center gap-3 p-3 rounded-lg hover:bg-muted transition-colors"
                           >
                             <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center text-accent">

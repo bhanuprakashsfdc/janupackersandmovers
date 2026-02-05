@@ -55,12 +55,12 @@ export const COMPANY = {
 // NAVIGATION LINKS
 // =====================================================
 export const NAV_LINKS = [
-  { label: "Home", href: "/" },
-  { label: "About Us", href: "/about" },
-  { label: "Services", href: "/services" },
-  { label: "Locations", href: "/locations" },
-  { label: "Gallery", href: "/gallery" },
-  { label: "Contact", href: "/contact" }
+  { label: "Home", href: "/index.html" },
+  { label: "About Us", href: "/about.html" },
+  { label: "Services", href: "/services.html" },
+  { label: "Locations", href: "/locations.html" },
+  { label: "Gallery", href: "/gallery.html" },
+  { label: "Contact", href: "/contact.html" }
 ];
 
 // =====================================================

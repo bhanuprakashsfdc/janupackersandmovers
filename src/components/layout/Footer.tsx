@@ -23,7 +23,7 @@ export const Footer = () => {
           <div>
             <div className="flex items-center gap-2 mb-6">
               <div className="w-10 h-10 rounded-lg bg-accent flex items-center justify-center">
-                <span className="text-white font-bold text-lg">S</span>
+                <span className="text-white font-bold text-lg"><img src="/logo.png" alt="Girl in a jacket"/></span>
               </div>
               <span className="font-bold text-xl">{COMPANY.name}</span>
             </div>
@@ -76,7 +76,7 @@ export const Footer = () => {
               {SERVICES.slice(0, 6).map((service) => (
                 <li key={service.id}>
                   <Link
-                    to={`/services/${service.slug}`}
+                    to={`/services/${service.slug}.html`}
                     className="text-primary-foreground/80 hover:text-accent transition-colors flex items-center gap-2"
                   >
                     <ArrowRight className="w-4 h-4" />
@@ -136,7 +136,7 @@ export const Footer = () => {
             {LOCATIONS.map((location) => (
               <Link
                 key={location.id}
-                to={`/${location.slug}`}
+                to={`/${location.slug}.html`}
                 className="px-3 py-1.5 rounded-full bg-white/10 text-sm hover:bg-accent transition-colors"
               >
                 {location.city}
@@ -165,19 +165,19 @@ export const Footer = () => {
             </p>
             <div className="flex gap-6 text-sm">
               <Link
-                to="/privacy-policy"
+                to="/privacy-policy.html"
                 className="text-primary-foreground/60 hover:text-accent transition-colors"
               >
                 Privacy Policy
               </Link>
               <Link
-                to="/terms"
+                to="/terms.html"
                 className="text-primary-foreground/60 hover:text-accent transition-colors"
               >
                 Terms & Conditions
               </Link>
               <Link
-                to="/sitemap"
+                to="/sitemap.html"
                 className="text-primary-foreground/60 hover:text-accent transition-colors"
               >
                 Sitemap

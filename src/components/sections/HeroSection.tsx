@@ -91,7 +91,7 @@ export const HeroSection = () => {
               className="flex flex-wrap gap-4"
             >
               <Button variant="hero" size="xl" asChild>
-                <Link to="/contact">
+                <Link to="/contact.html">
                   {HERO_CONTENT.primaryCTA}
                   <ArrowRight className="w-5 h-5" />
                 </Link>
