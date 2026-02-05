@@ -1,13 +1,35 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { HelmetProvider } from "react-helmet-async";
+import { Layout } from "@/components/layout/Layout";
+import { SEO } from "@/components/SEO";
+import { HeroSection } from "@/components/sections/HeroSection";
+import { ServicesSection } from "@/components/sections/ServicesSection";
+import { TrustBadgesSection } from "@/components/sections/TrustBadgesSection";
+import { ProcessSection } from "@/components/sections/ProcessSection";
+import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
+import { LocationsSection } from "@/components/sections/LocationsSection";
+import { FAQSection } from "@/components/sections/FAQSection";
+import { CTASection } from "@/components/sections/CTASection";
+import { SEO_DATA } from "@/constants/constants";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <HelmetProvider>
+      <SEO
+        title={SEO_DATA.home.title}
+        description={SEO_DATA.home.description}
+        keywords={SEO_DATA.home.keywords}
+      />
+      <Layout>
+        <HeroSection />
+        <ServicesSection />
+        <TrustBadgesSection />
+        <ProcessSection />
+        <TestimonialsSection />
+        <LocationsSection />
+        <FAQSection />
+        <CTASection />
+      </Layout>
+    </HelmetProvider>
   );
 };
 
