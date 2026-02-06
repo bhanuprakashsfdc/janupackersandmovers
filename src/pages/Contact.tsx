@@ -23,6 +23,7 @@ import {
   Send,
 } from "lucide-react";
 import { COMPANY, QUOTE_FORM, SEO_DATA, SERVICES } from "@/constants/constants";
+import { MapSection } from "@/components/sections/map";
 
 const Contact = () => {
   const [formStep, setFormStep] = useState(1);
@@ -492,6 +493,7 @@ const Contact = () => {
             </div>
           </div>
         </section>
+        <MapSection />
       </Layout>
     </HelmetProvider>
   );

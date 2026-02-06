@@ -10,6 +10,9 @@ import { LocationsSection } from "@/components/sections/LocationsSection";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { CTASection } from "@/components/sections/CTASection";
 import { SEO_DATA } from "@/constants/constants";
+import { MapSection } from "@/components/sections/map";
+
+
 
 const Index = () => {
   return (
@@ -27,6 +30,7 @@ const Index = () => {
         <TestimonialsSection />
         <LocationsSection />
         <FAQSection />
+        <MapSection />
         <CTASection />
       </Layout>
     </HelmetProvider>

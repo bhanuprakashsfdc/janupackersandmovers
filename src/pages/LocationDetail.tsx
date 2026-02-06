@@ -9,6 +9,7 @@ import { LOCATIONS, SERVICES, COMPANY, FAQ } from "@/constants/constants";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { CTASection } from "@/components/sections/CTASection";
 import { getCityConfigSync } from "@/data/city-data";
+import { MapSection } from "@/components/sections/map";
 
 const LocationDetail = () => {
   const params = useParams();
@@ -231,7 +232,7 @@ const LocationDetail = () => {
                   transition={{ delay: index * 0.1 }}
                 >
                   <Link
-                    to={`/services/${service.slug}`}
+                    to={`/services/${service.slug}.html`}
                     className="group block h-full bg-card rounded-xl border border-border p-6 hover:border-accent hover:shadow-lg transition-all"
                   >
                     <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center text-accent mb-4 group-hover:bg-accent group-hover:text-white transition-colors">
@@ -279,6 +280,7 @@ const LocationDetail = () => {
 
         <FAQSection />
         <CTASection />
+        <MapSection />
       </Layout>
     </HelmetProvider>
   );
