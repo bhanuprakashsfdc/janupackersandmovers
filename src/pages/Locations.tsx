@@ -55,7 +55,7 @@ const Locations = () => {
                   transition={{ delay: index * 0.05 }}
                 >
                   <Link
-                    to={`/${location.slug}`}
+                    to={`/${location.slug}.html`}
                     className="group block bg-card rounded-2xl border border-border hover:border-accent overflow-hidden transition-all duration-300 hover:shadow-xl"
                   >
                     {/* Header */}
@@ -117,7 +117,7 @@ const Locations = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button variant="accent" asChild>
-                <Link to="/contact">Request Service in Your City</Link>
+                <Link to="/contact.html">Request Service in Your City</Link>
               </Button>
               <Button variant="outline" asChild>
                 <a href={`tel:${COMPANY.phone}`}>

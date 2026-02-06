@@ -25,8 +25,8 @@ export const Header = () => {
   }, [location.pathname]);
 
   const isActive = (href: string) => {
-    if (href === "/") return location.pathname === "/";
-    return location.pathname.startsWith(href);
+    if (href === "/index.html") return location.pathname === "/" || location.pathname === "/index.html";
+    return location.pathname === href || location.pathname.startsWith(href.replace(".html", ""));
   };
 
   return (
@@ -42,9 +42,9 @@ export const Header = () => {
         <div className="container-fluid">
           <nav className="flex items-center justify-between">
             {/* Logo */}
-            <Link to="/" className="flex items-center gap-2 group">
+            <Link to="/index.html" className="flex items-center gap-2 group">
               <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-accent to-orange-dark flex items-center justify-center shadow-orange">
-                <span className="text-white font-bold text-lg">S</span>
+                <span className="text-white font-bold text-lg"><img src="/logo.png" alt="Girl in a jacket"/></span>
               </div>
               <div className="hidden sm:block">
                 <span
@@ -115,7 +115,7 @@ export const Header = () => {
                             {SERVICES.slice(0, 6).map((service) => (
                               <Link
                                 key={service.id}
-                                to={`/services/${service.slug}`}
+                                to={`/services/${service.slug}.html`}
                                 className="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-muted transition-colors"
                               >
                                 <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center text-accent">
@@ -128,7 +128,7 @@ export const Header = () => {
                             ))}
                             <div className="border-t border-border mt-2 pt-2">
                               <Link
-                                to="/services"
+                                to="/services.html"
                                 className="block px-4 py-2 text-accent font-medium hover:bg-accent/5 rounded-lg transition-colors"
                               >
                                 View All Services →
@@ -156,7 +156,7 @@ export const Header = () => {
                 </a>
               </Button>
               <Button variant="accent" size="sm" asChild>
-                <Link to="/contact">Get Free Quote</Link>
+                <Link to="/contact.html">Get Free Quote</Link>
               </Button>
             </div>
 
@@ -225,7 +225,7 @@ export const Header = () => {
                 </nav>
                 <div className="mt-8 space-y-3">
                   <Button variant="accent" className="w-full" asChild>
-                    <Link to="/contact">Get Free Quote</Link>
+                    <Link to="/contact.html">Get Free Quote</Link>
                   </Button>
                   <Button variant="outline" className="w-full" asChild>
                     <a href={`tel:${COMPANY.phone}`}>

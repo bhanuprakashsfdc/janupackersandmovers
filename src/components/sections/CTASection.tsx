@@ -45,7 +45,7 @@ export const CTASection = () => {
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button variant="accent" size="xl" asChild className="cta-glow">
-              <Link to="/contact">
+              <Link to="/contact.html">
                 {CTA_CONTENT.primary.buttonText}
                 <ArrowRight className="w-5 h-5" />
               </Link>
