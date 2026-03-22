@@ -39,7 +39,7 @@ export const LocationsSection = () => {
               transition={{ delay: index * 0.05 }}
             >
               <Link
-                to={`/${location.slug}`}
+                to={`/${location.slug}.html`}
                 className="group block p-6 rounded-xl bg-card border border-border hover:border-accent hover:shadow-lg transition-all duration-300"
               >
                 <div className="flex items-start gap-4">
@@ -72,7 +72,7 @@ export const LocationsSection = () => {
           className="text-center mt-10"
         >
           <Link
-            to="/locations"
+            to="/locations.html"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-primary text-primary-foreground font-medium hover:bg-primary/90 transition-colors"
           >
             View All 500+ Service Cities

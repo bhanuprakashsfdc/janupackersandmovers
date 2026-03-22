@@ -8,10 +8,19 @@ import { Button } from "@/components/ui/button";
 import { LOCATIONS, SERVICES, COMPANY, FAQ } from "@/constants/constants";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { CTASection } from "@/components/sections/CTASection";
+import { getCityConfigSync } from "@/data/city-data";
 
 const LocationDetail = () => {
-  const { slug } = useParams();
-  const location = LOCATIONS.find((l) => l.slug === slug);
+  const params = useParams();
+  const slugParam =
+    params.slug ??
+    (params.city ? `packers-and-movers-in-${String(params.city).toLowerCase()}` : undefined);
+
+  const dynamic = getCityConfigSync(slugParam);
+  const fallback = slugParam
+    ? LOCATIONS.find((l) => l.slug.toLowerCase() === slugParam.toLowerCase())
+    : null;
+  const location = dynamic || fallback;
 
   if (!location) {
     return (
@@ -19,7 +28,7 @@ const LocationDetail = () => {
         <div className="min-h-screen flex items-center justify-center">
           <div className="text-center">
             <h1 className="text-4xl font-bold mb-4">Location Not Found</h1>
-            <Link to="/locations" className="text-accent hover:underline">
+            <Link to="/locations.html" className="text-accent hover:underline">
               View All Locations
             </Link>
           </div>
@@ -34,7 +43,7 @@ const LocationDetail = () => {
     "@type": "MovingCompany",
     name: `${COMPANY.name} - ${location.city}`,
     description: location.metaDescription,
-    url: `/${location.slug}`,
+    url: `/${location.slug}.html`,
     telephone: COMPANY.phone,
     address: {
       "@type": "PostalAddress",
@@ -58,7 +67,7 @@ const LocationDetail = () => {
       <SEO
         title={location.metaTitle}
         description={location.metaDescription}
-        keywords={`packers movers ${location.city}, ${location.city} relocation, house shifting ${location.city}`}
+                keywords={`packers movers ${location.city}, ${location.city} relocation, house shifting ${location.city}`}
         structuredData={localBusinessSchema}
       />
       <Layout>
@@ -70,12 +79,12 @@ const LocationDetail = () => {
           <div className="container-fluid relative z-10">
             {/* Breadcrumb */}
             <div className="flex items-center gap-2 text-white/60 mb-4">
-              <Link to="/" className="hover:text-white transition-colors">
+              <Link to="/index.html" className="hover:text-white transition-colors">
                 Home
               </Link>
               <span>/</span>
               <Link
-                to="/locations"
+                to="/locations.html"
                 className="hover:text-white transition-colors"
               >
                 Locations
@@ -116,7 +125,7 @@ const LocationDetail = () => {
                 </p>
                 <div className="flex flex-wrap gap-4">
                   <Button variant="accent" size="lg" asChild>
-                    <Link to="/contact">
+                    <Link to="/contact.html">
                       Get Free Quote
                       <ArrowRight className="w-5 h-5" />
                     </Link>

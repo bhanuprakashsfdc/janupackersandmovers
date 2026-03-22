@@ -55,7 +55,7 @@ const Services = () => {
                   transition={{ delay: index * 0.1 }}
                 >
                   <Link
-                    to={`/services/${service.slug}`}
+                    to={`/services/${service.slug}.html`}
                     className="group block h-full bg-card rounded-2xl border border-border hover:border-accent overflow-hidden transition-all duration-300 hover:shadow-xl"
                   >
                     {/* Icon Header */}
